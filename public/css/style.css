@@ -1,0 +1,30 @@
+/*
+	Bootstrap Override css Start here
+*/
+.bg-light {
+    background-color: #ffc107!important;
+}
+
+/*
+	Bootstrap Override css End here
+*/
+.feature-image{
+	max-height: 200px;
+}
+.margin-top-20{
+	margin-top: 20px;
+}
+.footer-bg-color{
+	background: #ddd;
+}
+.footer-bottom {
+    padding: 20px;
+    margin-top: 20px;
+    background: #ffc107;
+}
+.single-product-bg{
+	background: #fca70469;
+}
+.product-price-collor{
+ color: #fca704;
+}
