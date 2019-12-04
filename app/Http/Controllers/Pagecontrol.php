@@ -18,5 +18,18 @@ class Pagecontrol extends Controller
     	return view('pages.contact');
     }
 
+    public function search(Request $request)
+    {
+    	$search = $request->search;
+    	$products = Product::orWhere('title','like','%'.$search.'%')
+    	->orWhere('description','like','%'.$search.'%')
+    	->orWhere('quantity','like','%'.$search.'%')
+    	->orWhere('price','like','%'.$search.'%')
+    	->orderBy('id','desc')
+    	->paginate(6);
+    	return view('pages.search',compact('search','products'));
+
+    }
+
     
 }

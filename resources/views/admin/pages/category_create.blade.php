@@ -26,6 +26,7 @@
               <div class="form-group">
                 <label for="image">Parent Category</label>
                 <select class="form-control" name="parent_id">
+                  <option value="">Please Select Parent Category</option>
                   @foreach($main_category as $category)
                       <option value="{{$category->id}}">{{$category->name}}</option>
                   @endforeach

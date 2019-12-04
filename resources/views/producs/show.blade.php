@@ -15,6 +15,7 @@
                         <li data-target="#demo" data-slide-to="0" class="active"></li>
                         <li data-target="#demo" data-slide-to="1"></li>
                         <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
                       </ul>
                       
                       <!-- The slideshow -->
@@ -43,7 +44,11 @@
                         <span class="carousel-control-next-icon"></span>
                       </a>
                     </div>
+                    <div class="mt-5">
+                    Category is <span class="badge badge-info">{{$products->category->name}}</span> || Brand is <span class="badge badge-primary">{{$products->brand->name}}</span> 
                   </div>
+                  </div>
+                  
               <!--Single product galary show slider end here-->
                 
 

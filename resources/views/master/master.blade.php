@@ -15,6 +15,7 @@
         @include('helper.topnavbar')
         
         @yield('productcontent')
+        @yield('content')
 
         @include('helper.bottomfotter')      
         

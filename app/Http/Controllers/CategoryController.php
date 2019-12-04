@@ -92,6 +92,8 @@ class CategoryController extends Controller
     		Image::make($image)->save($location);
     		$category->image =$img;
     	}
+        
+
     	$category->save();
     	session()->flash('success','Category update successfuly..!');
 

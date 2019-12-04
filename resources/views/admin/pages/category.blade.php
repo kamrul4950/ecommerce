@@ -24,7 +24,7 @@
                         <td>{{++$i }}</td>
                         <td>{{ $category->name }}</td>
                         <td>
-                          <img src="{{ asset('images/category_image/'.$category->image) }}" width="100px">
+                          <img src="{{ asset('images/category_image/'.$category->image) }}" width="30px">
                         </td>
                         <td>
                           @if($category->parent_id == NULL)
